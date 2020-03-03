@@ -55,7 +55,7 @@ class CellTest {
         createAndMoveCellState(false, true, 4)
         createAndMoveCellState(false, true, 5)
     }
-    
+
     private fun createAndMoveCellState(finalState: Boolean, initialState: Boolean = true, numLivingNeighbours: Int = 0 ) {
         var cell = Cell(initialState)
         var newCell = cell.nextMove(numLivingNeighbours)
