@@ -21,6 +21,16 @@ class UniverseTest{
         }
     }
 
+    @Test
+    fun universeIsStartedWithLiveCells(){
+        val universe = Universe(UNIVERS_SIZE)
+        universe.startUniverse(Pair(0,1),Pair(2,1))
+        assertThat(universe.cells[0][1].isAlive).isEqualTo(true)
+        assertThat(universe.cells[2][1].isAlive).isEqualTo(true)
+    }
+
+
+
 
 
 
