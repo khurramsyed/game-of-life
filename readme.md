@@ -1,4 +1,15 @@
-#Game of Life Exercise
+# Game of Life Exercise
+## Running the application 
+
+In this example application will run glider pattern on 25*25 grid.
+
+To run, you need to do the following steps:
+
+~~~shell script
+mvn clean install
+java -jar target/gameoflife-1.0-SNAPSHOT-jar-with-dependencies.jar
+~~~
+
 ## Definition:
 
 The universe of the Game of Life is an infinite two­dimensional orthogonal grid of squarecells, each of which
