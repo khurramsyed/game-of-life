@@ -2,12 +2,12 @@ package com.test.gameoflife
 
 class Cell(var isAlive: Boolean) {
 
-    fun nextMove(livingNeighbourCount: Int): Cell {
+    fun nextMove(livingNeighbourCount: Int): Boolean{
         return when (livingNeighbourCount) {
-            0, 1 -> Cell(false)
-            2 -> Cell(isAlive)
-            3 -> Cell(true)
-            else -> Cell(false)
+            0, 1 -> false
+            2 -> isAlive
+            3 -> true
+            else -> false
         }
     }
 }

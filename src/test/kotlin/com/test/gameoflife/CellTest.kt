@@ -58,8 +58,7 @@ class CellTest {
 
     private fun createAndMoveCellState(finalState: Boolean, initialState: Boolean = true, numLivingNeighbours: Int = 0) {
         var cell = Cell(initialState)
-        var newCell = cell.nextMove(numLivingNeighbours)
-        assertThat(newCell.isAlive).isEqualTo(finalState)
+        assertThat(cell.nextMove(numLivingNeighbours)).isEqualTo(finalState)
     }
 
 }
